@@ -1,13 +1,12 @@
 {
-  "name": "REPLACE_ME",
-  "description": "REPLACE_ME",
-  "author": "REPLACE_ME",
+  "name": "laravelsp-client",
+  "description": "Client for Language Server Protocol for PHP Laravel",
+  "author": "Steven Deshazer",
   "license": "MIT",
   "version": "0.0.1",
-  "publisher": "REPLACE_ME",
   "repository": {
     "type": "git",
-    "url": "REPLACE_ME"
+    "url": "deshazer/laravelsp"
   },
   "engines": {
     "vscode": "^1.75.0"

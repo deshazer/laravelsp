@@ -1,16 +1,15 @@
 {
-  "name": "REPLACE_ME",
-  "description": "REPLACE_ME",
-  "author": "REPLACE_ME",
+  "name": "laravelsp",
+  "description": "Language Server Protocol for PHP Laravel",
+  "author": "Steven Deshazer",
   "license": "MIT",
   "version": "1.0.0",
-  "publisher": "REPLACE_ME",
   "categories": [],
   "engines": {
     "vscode": "^1.75.0"
   },
   "activationEvents": [
-    "onLanguage"
+    "onLanguage:php"
   ],
   "main": "./client/out/extension",
   "contributes": {
