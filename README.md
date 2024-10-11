@@ -1,3 +1,47 @@
+# Language Server Protocol (LSP) for PHP Laravel
+
+## Features from VS Code extension in Laracon 2024 keynote:
+
+1. Auto-complete
+
+- config helper
+- app() binding strings
+- auto complete for routes
+- auto complete for env vars
+- auto complete for translations
+- auto complete for views (and values in the files)
+- auto complete for Inertia views (with props)
+- Eloquent auto complete (fillable properties on creation, all properties on query builder)
+  -  where clause (fields on model)
+  - nested where clause, get autocomplete for closure
+  - new model creation (fillable only)
+  - relations autocomplete
+  - subquery relations only allow fields on relation model
+
+Extra: correctly detect facades, magic model methods, etc with go to definition
+
+
+2. Clickable
+
+- config becomes link to where defined in the file
+- env var becomes link to where defined in .env file
+- app bindings become link to where defined in service provider
+- app route('<named_route>') becomes link to controller/method handler
+- link to Inertia route
+
+3. Hover
+
+- see current .env value on hover
+- see where app() binding is defined
+- show route controller/method handler on hover
+- show translations on hover
+
+4. Diagnostics
+
+- Missing environment variable (warning)
+- Code action to add value to .env file
+- Code action to add var from .env.example to .env
+
 # Minimum Viable VS Code Language Server Extension
 
 NOTE: This is heavily based on [lsp-sample from vscode-extension-samples][sample] with the goal of removing example-specific code to ease starting a new Language Server.
